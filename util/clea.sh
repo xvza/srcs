@@ -6,9 +6,7 @@ function    cl()                                  {
   eval      "yay -Scc --noconfirm 2> /dev/null"
   eval      "dnf clean all 2> /dev/null"
 ###################################################
-  source    "moun.sh"  "usrs"
-  declare   "path=${dire[usrs]}/local/share/dconf"
-###################################################
+  declare   "path=${SHARE}/dconf"
   eval      "dconf reset -f /"
 ###################################################
   declare   "name=config.ini"
