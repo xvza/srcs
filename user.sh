@@ -6,5 +6,3 @@ declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
 source    "arrf.sh"  "${srcs[$name]}"
 source    <(cat ${file[@]})
 #################################################
-source    "pkgs.sh"  "yay"
-#################################################
