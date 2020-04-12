@@ -11,6 +11,9 @@ alias   "lua=lu;cd ./share/"
 alias   "lui=lua;cd ./icons/"
 alias   "lut=lua;cd ./themes/"
 ################################################################
+alias   "lv=cd /var/"
+alias   "lvh=lv;cd ./http/"
+################################################################
 alias   "rd=rt devs"
 alias   "re=rt etcs"
 alias   "rh=rt trsh"
@@ -18,19 +21,13 @@ alias   "rl=rt list"
 alias   "ra=rt shrd"
 alias   "rs=rt srcs"
 alias   "ru=rt usrs"
-alias   "rv=rt vars"
 ################################################################
-alias   "rea=re;cd ./xdg/autostart/"
-alias   "rek=re;cd ./skel"
-alias   "reo=re;cd ./xdg/openbox/"
+alias   "rk=re;cd ./skel"
+alias   "rx=re;cd ./xdg/"
+alias   "rea=rx;cd ./autostart/"
+alias   "reo=rx;cd ./openbox/"
 ################################################################
-alias   "rua=ru;cd ./local/share/"
-alias   "rui=ru;cd ./local/bin/"
-alias   "rus=ru;cd ./local/bin/bash/"
-################################################################
-alias   "rvh=rv;cd ./http/"
-alias   "rvl=rv;cd ./local/"
-alias   "rvw=rv;cd ./wall/"
+alias   "rb=rs;cd ./bin/bash/"
 ################################################################
 alias   "cp=cpo -u"
 alias   "cpo=cp -rv"
@@ -61,7 +58,7 @@ alias   "ca=cava"
 alias   "cava=rua;cava -p ./cava/config.ini"
 ################################################################
 alias   "tra=transmission-cli"
-alias   "transmission-cli=lh;transmission-cli -g ./transmission"
+alias   "transmission-cli=ra;transmission-cli -g ./transmission"
 ################################################################
 alias   "du=du -hs *|sort -rh"
 alias   "ft=grep -nr"

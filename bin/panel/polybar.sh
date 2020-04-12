@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #################################################
 declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
-declare   "cfg=${SHRD}/${name}/config.ini"
+declare   "file=$(find ${SHRD}/${name} -type f)"
 #################################################
 eval      "killall -q ${name}"
-eval      "${name} -c ${cfg} -r bottom"         &
-eval      "${name} -c ${cfg} -r top"            &
+eval      "${name} -c" <(cat ${file}) "bottom"  &
+eval      "${name} -c" <(cat ${file}) "top"     &
 #################################################
