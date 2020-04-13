@@ -1,4 +1,4 @@
-##!/usr/bin/env bash
+#!/usr/bin/env bash
 #################################################
 declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
 declare   "shrd=${SHRD}/${name}"
