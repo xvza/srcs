@@ -52,10 +52,10 @@ alias   "nw=newsbeuter"
 alias   "newsbeuter=rl;newsbeuter -u ./news/add"
 ################################################################
 alias   "po=polybar"
-alias   "polybar=rui;./panel/polybar.sh"
+alias   "polybar=polybar.sh"
 ################################################################
 alias   "ca=cava"
-alias   "cava=rua;cava -p ./cava/config.ini"
+alias   "cava=ra;cava -p ./cava/config.ini"
 ################################################################
 alias   "tra=transmission-cli"
 alias   "transmission-cli=ra;transmission-cli -g ./transmission"
