@@ -11,5 +11,5 @@ export    "PATH=$(getconf PATH):${path// /:}"
 source    "${srcs}/util/arrd.sh"  "${http}"
 source    "${srcs}/util/arrf.sh"  "${shel}/bash"
 ################################################
-source    "${shel}/color/dircolors.sh"
+source    "dircolors.sh"
 ################################################
