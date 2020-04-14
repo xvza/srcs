@@ -8,8 +8,6 @@ source    "${srcs}/util/arrd.sh"  "${srcs}"
 declare   "path=$(echo ${dire[@]})"
 export    "PATH=$(getconf PATH):${path// /:}"
 #############################################
-source    "${srcs}/util/arrd.sh"  "${http}"
-source    "${srcs}/util/arrf.sh"  "${shel}"
-#############################################
+source    "arrf.sh"  "${shel}"
 source    "dircolors.sh"
 #############################################
