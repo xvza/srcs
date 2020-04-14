@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
 ##########################################################
 declare   "s0=operation label"
-declare   "oper=${2?$s0}"
-declare   "list=${3-defa}/${oper}"
 ##########################################################
-source    "vali.sh"  "${1}"     "${oper}"  "${list}"
+source    "vali.sh"  "${1}"     "${2?$s0}"       "${list}"
 ##########################################################
 source    "moun.sh"  "list"
-declare   "list=${dirs[list]}${list}"
+declare   "list=${dire[list]}/${3?}/${2?}"
 ##########################################################
 source    "head.sh"
-source    "core.sh"  "${opts}"  "options         :"  false
-source    "core.sh"  "${list}"  "list directory  :"
+source    "core.sh"  "${opts}"  "options     :"  false
+source    "core.sh"  "${list}"  "list        :"
 source    "foot.sh"
 ##########################################################
-declare   "pkgs=$(cat ${list})"
+declare   "pkgs=$(echo $(cat ${list}))"
 eval      "sudo ${1} ${opts} ${pkgs}"
 ##########################################################
