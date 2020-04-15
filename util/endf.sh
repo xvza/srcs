@@ -5,7 +5,7 @@ function    net0()       {
   local     "e=${?}"
   source    "mesg.sh"
   eval      "${name} ${@}"
-  return    "6"
+  return    "${e}"
 ##########################
                          }
 ##########################

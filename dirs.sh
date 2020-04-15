@@ -2,7 +2,7 @@
 #############################################
 declare   "srcs=$(dirname ${BASH_SOURCE[0]})"
 declare   "http=${srcs}/.."
-declare   "shel=${http}/srcs/bash"
+declare   "shel=${srcs}/bash"
 #############################################
 source    "${srcs}/util/arrd.sh"  "${srcs}"
 declare   "path=$(echo ${dire[@]})"
