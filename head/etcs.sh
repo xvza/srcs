@@ -4,10 +4,10 @@ declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
 source    "moun.sh"  "${name}"
 ######################################################
 declare   "dest=${HOME}/"
-eval      "sudo del0.sh ${dest}"
+eval      "sudo dele.sh ${dest}"
 ######################################################
 declare   "dest=/etc/skel"
-eval      "sudo del0.sh ${dest}"
+eval      "sudo dele.sh ${dest}"
 ######################################################
 declare   "dest=/etc"
 declare   "src=${dire[$name]}"

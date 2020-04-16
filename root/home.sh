@@ -9,7 +9,7 @@ source    "core.sh"  "${dirs[etcs]}"  "etcs directory   :"
 source    "core.sh"  "${dest}"        "dest directory   :"
 source    "foot.sh"
 ##########################################################
-eval      "sudo del0.sh ${dest}"
+eval      "sudo dele.sh ${dest}"
 eval      "sudo dir0.sh ${dest}.config/ ${src}"
 eval      "sudo rep0.sh ${dest} _USER ${USER}"
 ##########################################################

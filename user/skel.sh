@@ -7,8 +7,8 @@ source    "core.sh"  "${SKEL}"                   "skel directory   :"
 source    "core.sh"  "${dire[etcs]}"             "etcs directory   :"
 source    "foot.sh"
 #####################################################################
-source    "del0.sh"  "${HOME}"
-source    "del0.sh"  "${SKEL}"
+source    "dele.sh"  "${HOME}"
+source    "dele.sh"  "${SKEL}"
 source    "dir0.sh"  "${HOME}"                   "${dire[etcs]}skel/"
 source    "dir0.sh"  "${SKEL}"                   "${dire[etcs]}skel/"
 #####################################################################
