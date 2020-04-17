@@ -60,7 +60,7 @@ alias   "cava=ra;cava -p ./cava/config.ini"
 alias   "tra=transmission-cli"
 alias   "transmission-cli=ra;transmission-cli -g ./transmission"
 ################################################################
-alias   "du=du -hs *|sort -rh"
+alias   "du=du -hsc"
 alias   "ft=grep -nr"
 alias   "ge=git clean -f -x"
 alias   "mv=mv -v"
