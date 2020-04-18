@@ -57,9 +57,6 @@ alias   "polybar=polybar.sh"
 alias   "ca=cava"
 alias   "cava=ra;cava -p ./cava/config.ini"
 ################################################################
-alias   "tra=transmission-cli"
-alias   "transmission-cli=ra;transmission-cli -g ./transmission"
-################################################################
 alias   "du=du -hsc"
 alias   "ft=grep -nr"
 alias   "ge=git clean -f -x"
