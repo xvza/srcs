@@ -11,4 +11,5 @@ declare   "le=list extras"
 declare   "qs=search"
 declare   "qi=info"
 declare   "qp=provides"
+declare   "qh=history"
 ########################################
