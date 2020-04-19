@@ -16,7 +16,7 @@ declare   "color[FROST3]=$(tput setaf 4)"
 declare   "color[AURORA0]=$(tput setaf 5)"
 declare   "color[AURORA1]=$(tput setaf 1)"
 declare   "color[AURORA2]=$(tput setaf 3)"
-declare   "color[AURORA3]=$(tput setaf 2)"
+declare   "color[AURORA3]="
 declare   "color[AURORA4]=$(tput setaf 13)"
 ##############################################
 declare   "color[0]=${color[AURORA3]}"
@@ -24,3 +24,11 @@ declare   "color[1]=${color[AURORA1]}"
 ##############################################
 declare   "color[1000]=${color[FROST0]}"
 ##############################################
+declare   "-A"  "primary"
+##############################################
+declare   "border=#2e3440"
+declare   "background=#3b4252"
+declare   "primary[foreground]=#d8dee9"
+declare   "primary[background]=#8fbcbb"
+##############################################
+
