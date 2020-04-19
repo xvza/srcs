@@ -14,13 +14,13 @@ alias   "lut=lua;cd ./themes/"
 alias   "lv=cd /var/"
 alias   "lvh=lv;cd ./http/"
 ################################################################
-alias   "rd=rt devs"
-alias   "re=rt etcs"
-alias   "rh=rt trsh"
-alias   "rl=rt list"
-alias   "ra=rt shrd"
-alias   "rs=rt srcs"
-alias   "ru=rt usrs"
+#alias   "rd=rt devs"
+#alias   "re=rt etcs"
+#alias   "rh=rt trsh"
+#alias   "rl=rt list"
+#alias   "ra=rt shrd"
+#alias   "rs=rt srcs"
+#alias   "ru=rt usrs"
 ################################################################
 alias   "rk=re;cd ./skel"
 alias   "rx=re;cd ./xdg/"
@@ -39,31 +39,25 @@ alias   "en=ta :en"
 alias   "fr=ta :fr"
 alias   "ta=trans -p"
 ################################################################
-alias   "ll=exa -la -s type"
-alias   "lt=ll -T"
-################################################################
-alias   "gr=grep"
-alias   "grep=grep --color=auto -i"
-################################################################
-alias   "mk=mkdir"
-alias   "mkdir=mkdir -vp"
-################################################################
-alias   "nw=newsbeuter"
-alias   "newsbeuter=rl;newsbeuter -u ./news/add"
-################################################################
-alias   "po=polybar"
-alias   "polybar=polybar.sh"
-################################################################
-alias   "ca=cava"
-alias   "cava=ra;cava -p ./cava/config.ini"
-################################################################
 alias   "du=du -hsc"
-alias   "ft=grep -nr"
-alias   "ge=git clean -f -x"
+alias   "grep=grep --color=auto -i"
+alias   "ls=exa -la -s type"
+alias   "mkdir=mkdir -vp"
 alias   "mv=mv -v"
-alias   "ne=neofetch"
 alias   "rename=rename -v"
 alias   "rm=rm -rv"
+################################################################
+alias   "newsbeuter=rl;newsbeuter -u ./news/add"
+alias   "cava=ra;cava -p ./cava/config.ini"
+################################################################
+alias   "rofi=rofi.sh"
+alias   "polybar=polybar.sh"
+################################################################
+alias   "gr=grep"
+alias   "ft=grep -nr"
+alias   "ge=git clean -f -x"
+alias   "lt=ll -T"
+alias   "ne=neofetch"
 alias   "wg=wget"
 alias   "wh=which"
 ################################################################
