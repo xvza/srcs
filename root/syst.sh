@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 #################################################
-declare   "dirs=$(dirname ${BASH_SOURCE[0]})/../"
-source    "${dirs}dirs.sh"
-#################################################
 source    "moun.sh"  "list"
 declare   "dire=${dire[list]}/syst/"
 #################################################
