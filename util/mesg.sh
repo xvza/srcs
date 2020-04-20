@@ -3,7 +3,7 @@
 function    net0()                     {
 ########################################
   source    "colo.sh"
-  declare   "c=${color[$e]}"
+  declare   "c=${shell[$e]}"
   echo      "${c}${1}: ${mesg[$e]}${nc}"
 ########################################
                                        }

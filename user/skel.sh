@@ -2,9 +2,9 @@
 ###########################################################
 source    "moun.sh"  "etcs"
 source    "head.sh"
-source    "core.sh"  "${HOME}"        "home directory   :"
-source    "core.sh"  "${SKEL}"        "skel directory   :"
-source    "core.sh"  "${dire[etcs]}"  "etcs directory   :"
+source    "core.sh"  "${HOME}"        "home dire   :"
+source    "core.sh"  "${SKEL}"        "skel dire   :"
+source    "core.sh"  "${dire[etcs]}"  "etcs dire   :"
 source    "foot.sh"
 ###########################################################
 source    "dele.sh"  "${HOME}"

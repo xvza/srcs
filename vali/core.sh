@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 ################################################
-declare   "col=${color[FROST3]}"
-declare   "msg=${1:-${color[AURORA0]}none}${nc}"
+declare   "col=${shell[3]}"
+declare   "msg=${1:-${shell[2]}none}${nc}"
 ################################################
 [[ -e ${1?} ]] &&                              \
-declare   "col=${color[AURORA3]}"
+declare   "col=${shell[0]}"
 ################################################
 [[    ${3} ]] &&                               \
-declare   "col=${color[AURORA4]}"
+declare   "col=${shell[1]}"
 ################################################
 [[ !  ${3} ]] && [[ !  -e  ${1?} ]] &&         \
 declare   "err=1"
