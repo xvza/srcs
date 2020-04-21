@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 ##########################
-function    net0()       {
+function    _0()       {
 ##########################
   local     "e=${?}"
   source    "mesg.sh"
-  eval      "${name} ${@}"
+  eval      "${FUNCNAME[0]} ${@}"
   return    "${e}"
 ##########################
                          }

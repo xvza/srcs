@@ -4,7 +4,6 @@ declare   "dirs=$(dirname ${BASH_SOURCE[0]})"
 source    "arrd.sh"  "${dirs}/../../"
 source    "endf.sh"
 #################################################
-declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
 declare   "l0=directory label"
 declare   "l1=directory not found"
 #################################################
@@ -16,5 +15,5 @@ declare   "mesg[1]=${l1}"
 #################################################
 [[ -n ${dire[$1]} ]]
 #################################################
-eval      "${name} ${1}"
+eval      "_0 ${1}"
 #################################################

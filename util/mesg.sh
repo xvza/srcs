@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ########################################
-function    net0()                     {
+function    _0()                     {
 ########################################
   source    "colo.sh"
   declare   "c=${shell[$e]}"
