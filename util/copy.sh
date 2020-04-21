@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #############################################
-declare   "bin=$(cp -uvpr ${2?} ${1?})"
+declare   "bin=$(cp -vpr ${2?} ${1?})"
 declare   "str=cp: ${1?} directory is newest"
 #############################################
 [[ -z ${bin} ]] &&                          \

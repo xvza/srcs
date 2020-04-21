@@ -9,6 +9,6 @@ source    "foot.sh"
 ###########################################################
 source    "dele.sh"  "${HOME}"
 source    "dele.sh"  "${SKEL}"
-source    "dir0.sh"  "${HOME}"        "${dire[etcs]}/skel/"
-source    "dir0.sh"  "${SKEL}"        "${dire[etcs]}/skel/"
+source    "copy.sh"  "${HOME}"        "${dire[etcs]}/skel/"
+source    "copy.sh"  "${SKEL}"        "${dire[etcs]}/skel/"
 ###########################################################

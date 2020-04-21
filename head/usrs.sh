@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 ##################################################
 declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
-declare   "dir0=$(command -v dir0.sh)"
+declare   "copy=$(command -v copy.sh)"
 ##################################################
 source    "moun.sh"  "${name}"
 ##################################################
-eval      "sudo ${dir0} /usr ${dire[$name]}/share"
+eval      "sudo ${copy} /usr ${dire[$name]}/share"
 ##################################################
