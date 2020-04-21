@@ -19,11 +19,3 @@ eval      "sudo ${copy} /etc $(find ${dest})"
 declare   "dest=${SKEL} ${opts} ${hide}"
 eval      "sudo ${copy} ${HOME} $(find ${dest})"
 #################################################
-declare   "dest=/etc/bashrc"
-source    "${dest}"
-echo      "source: ${dest}"
-#################################################
-declare   "dest=/etc/bash.bashrc"
-source    "${dest}"
-echo      "source: ${dest}"
-#################################################
