@@ -5,10 +5,10 @@ declare   "opts=-mindepth 1 -maxdepth 1"
 declare   "hide=-name .*"
 declare   "dele=$(command -v dele.sh)"
 declare   "copy=$(command -v copy.sh)"
-declare   "env=profile.d/environment.sh"
+declare   "file=profile.d/environment.sh"
 #################################################
 source    "moun.sh"  "${name}"
-source    "${dire[$name]}/${env}"
+source    "${dire[$name]}/${file}"
 #################################################
 eval      "sudo ${dele} ${HOME}"
 eval      "sudo ${dele} ${SKEL}"
