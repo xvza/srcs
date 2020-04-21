@@ -10,10 +10,14 @@ source    "moun.sh"  "${name}"
 #################################################
 eval      "sudo ${dele} ${HOME}"
 eval      "sudo ${dele} /etc/skel"
-eval      "sudo ${dir0} /etc ${dire[$name]}"
+eval      "sudo ${dir0} /etc ${dire[$name]}/*"
 eval      "sudo ${dir0} ${HOME} $(find ${cmd})"
 #################################################
 declare   "dest=/etc/bashrc"
+source    "${dest}"
+echo      "source: ${dest}"
+#################################################
+declare   "dest=/etc/bash.bashrc"
 source    "${dest}"
 echo      "source: ${dest}"
 #################################################
