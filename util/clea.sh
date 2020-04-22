@@ -13,7 +13,11 @@ declare   "dire=${HOME}/.local/share/epiphany"
 declare   "opts=-mindepth 1 ! -name *.gvdb"
 eval      "find ${dire} ${opts} -delete"
 ###############################################
-declare   "dire=${HOME}/.local/share/"
+declare   "dire=${HOME}/.local/share"
 declare   "opts=-name *.xbel"
+eval      "find ${dire} ${opts} -delete"
+###############################################
+declare   "dire=${HOME}/.cache"
+declare   "opts=-mindepth 1"
 eval      "find ${dire} ${opts} -delete"
 ###############################################
