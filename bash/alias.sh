@@ -51,7 +51,6 @@ alias   "gr=grep"
 alias   "ft=grep -nr"
 alias   "ge=git clean -f -x"
 alias   "lt=ll -T"
-alias   "ne=neofetch"
 alias   "wg=wget"
 alias   "wh=which"
 ################################################
