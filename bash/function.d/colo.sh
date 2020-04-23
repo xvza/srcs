@@ -2,6 +2,8 @@
 #######################################################
 function  co()                                        {
 #######################################################
+  declare   "-i"  "n=5"
+  declare   "space=$(seq -s' ' ${n}|tr -d [:digit:])"
   source    "colo.sh"
 #######################################################
   echo
@@ -11,8 +13,8 @@ function  co()                                        {
     printf    " │"
     for c in {8..15}
     do
-      printf  "${background[$l]}   "
-      printf  "${background[$c]}   "
+      printf  "${background[$l]}${space}"
+      printf  "${background[$c]}${space}"
     done
     echo      "${shell[init]}"
 #######################################################
