@@ -7,6 +7,6 @@ declare   "sheb=$(basename ${SHELL})"
 declare   "file=$(basename ${BASH_SOURCE[1]})"
 declare   "err=0"
 #############################################
-echo      "-------------------------"
+eval      "${line}"
 echo      "${sheb} file   :  ${file}"
 #############################################
