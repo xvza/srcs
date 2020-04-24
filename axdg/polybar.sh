@@ -2,7 +2,7 @@
 ##########################################################
 declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
 declare   "file=$(find ${SHRD}/${name} -type f)"
-declare   "color=${SHRD}/${name}/color/nord.ini"
+declare   "color=${SHRD}/${name}/color.ini"
 ##########################################################
 source    "colo.sh"
 ##########################################################
