@@ -44,8 +44,6 @@ alias   "rm=rm -rv"
 ################################################
 alias   "newsbeuter=rl;newsbeuter -u ./news/add"
 alias   "cava=ra;cava -p ./cava/config.ini"
-################################################
-alias   "rofi=rofi.sh"
 alias   "polybar=polybar.sh"
 ################################################
 alias   "gr=grep"
