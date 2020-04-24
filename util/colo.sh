@@ -16,6 +16,8 @@ declare   "hexa[border]=#2e3440"
 declare   "hexa[background]=#3b4252"
 declare   "hexa[foreground]=#d8dee9"
 declare   "hexa[primary]=#8fbcbb"
+declare   "hexa[warning]=#ebcb8b"
+declare   "hexa[alert]=#bf616a"
 ###########################################
 declare   "-a"  "background"
 ###########################################
