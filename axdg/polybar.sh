@@ -14,7 +14,8 @@ echo      "success     =${hexa[primary]}"     >>  ${color}
 echo      "warning     =${hexa[warning]}"     >>  ${color}
 echo      "alert       =${hexa[alert]}"       >>  ${color}
 ##########################################################
-command   "killall"  "-q"  "${name}"
-command   "${name}"  "-c"  <(cat ${file})  "bottom"      &
-command   "${name}"  "-c"  <(cat ${file})  "top"         &
+eval      "killall -q ${name}"
+eval      "$(${name} -c  <(cat ${file})  bottom)"        &
+eval      "$(${name} -c  <(cat ${file})  top)"           &
 ##########################################################
+
