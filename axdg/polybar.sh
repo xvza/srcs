@@ -5,7 +5,7 @@ declare   "file=$(find ${SHRD}/${name} -type f)"
 declare   "color=${SHRD}/${name}/color.ini"
 ######################################################
 eval      "source colo.sh"
-eval      "source poly.sh > ${color}"
+eval      "source bars.sh > ${color}"
 ######################################################
 eval      "killall -q ${name}"
 eval      "$(${name} -c  <(cat ${file})  bottom)"    &
