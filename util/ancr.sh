@@ -9,7 +9,6 @@ declare   "window=${hb},${hr},${hp}"
 declare   "normal=${hb},${hf},${hb},${hp},${hb}"
 declare   "active=${hb},${hf},${hb},${hp},${hb}"
 ################################################
-printf    ""
 echo      "rofi.color-window  :${window}"
 echo      "rofi.color-normal  :${normal}"
 echo      "rofi.color-active  :${active}"
