@@ -12,7 +12,7 @@ declare   "state=$(ps -q${id} -ostate --no-headers)"
 && eval   "kill -STOP ${id}"
 ####################################################
 [[ ${1} -eq "0"  ]]                                \
-&& eval   "killall -KILL ${bin}"
+&& eval   "killall -TERM ${bin}"
 ####################################################
 [[ -e ${SKEL}/${1?$s0} ]]                          \
 && eval   "${bin} -z ${SKEL}/${1}"
