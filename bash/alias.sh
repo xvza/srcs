@@ -43,13 +43,15 @@ alias   "rename=rename -v"
 alias   "rm=rm -rv"
 ################################################
 alias   "newsbeuter=rl;newsbeuter -u ./news/add"
-alias   "cava=ra;cava -p ./cava/config.ini"
+################################################
+alias   "cava=cava.sh"
 alias   "polybar=polybar.sh"
 ################################################
 alias   "ft=grep -nr"
 alias   "fw=ft -w"
 alias   "ge=git clean -f -x"
 alias   "lt=ls -T"
+alias   "rofi=rofi -show"
 ################################################
 alias   "en=ta :en"
 alias   "fr=ta :fr"

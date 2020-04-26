@@ -24,5 +24,3 @@ echo      "systemctl: daemon-reload"
 #################################################
 eval      "sudo updatedb -v"
 #################################################
-#   systemctl   set-default   graphical.target
-#################################################
