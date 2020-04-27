@@ -7,5 +7,5 @@ declare   "color=${SHRD}/${name}/color.ini"
 eval      "source colo.sh"
 eval      "source snth.sh > ${color}"
 ######################################################
-eval      "${name} -p $(echo ${file})"
+eval      "${name} -p" <(cat ${file})
 ######################################################
