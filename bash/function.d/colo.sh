@@ -4,6 +4,8 @@ function  co()                                        {
 #######################################################
   declare   "space=$(seq -s' ' ${1}|tr -d [:digit:])"
 #######################################################
+  source    "back.sh"
+#######################################################
   echo
   for l in {0..7}
   do
@@ -11,8 +13,8 @@ function  co()                                        {
     printf    " │${shell[bold]}"
     for c in {8..15}
     do
-      printf  "${background[$l]}${space}${l}${space}"
-      printf  "${background[$c]}${space}${c}${space}"
+      printf  "${back[$l]}${space}${l}${space}"
+      printf  "${back[$c]}${space}${c}${space}"
     done
     echo      "${shell[init]}"
 #######################################################

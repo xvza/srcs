@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#####################################
+#########################################
 declare   "-A"  "color"
-#####################################
-declare   "color[background]=3b4252"
+#########################################
 declare   "color[black]=2e3440"
 declare   "color[darkred]=bf616a"
 declare   "color[darkgreen]=a3be8c"
@@ -19,4 +18,6 @@ declare   "color[blue]=81a1c1"
 declare   "color[magenta]=b48ead"
 declare   "color[cyan]=8fbcbb"
 declare   "color[white]=eceff4"
-#####################################
+declare   "color[background]=3b4252"
+declare   "color[primary]=${color[cyan]}"
+#########################################
