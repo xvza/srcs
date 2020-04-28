@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-#######################################
-echo "[color]"
-echo "foreground  =${hexa[primary]}"
-echo "background  =${hexa[border]}"
-echo "warning     =${hexa[warning]}"
-echo "alert       =${hexa[alert]}"
-#######################################
+########################################
+source    "hexa.sh"
+########################################
+echo      "[color]"
+echo      "foreground  =${hexa[cyan]}"
+echo      "background  =${hexa[black]}"
+echo      "warning     =${hexa[yellow]}"
+echo      "alert       =${hexa[red]}"
+########################################
