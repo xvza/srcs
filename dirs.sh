@@ -15,5 +15,6 @@ source    "terminal.sh"
 eval      "clear"
 #############################################
 source    "environment.sh"
+source    "palette.sh"
 source    "header.sh"
 #############################################
