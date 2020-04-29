@@ -14,8 +14,8 @@ source    "${dire[$name]}/${file}"
 #eval      "sudo ${dele} ${SKEL}"
 ##################################################
 declare   "dest=${dire[$name]} ${opts} ! ${hide}"
-
-echo      "$(find ${dire[$name]} ${opts} ! ${hide})"
+declare   "dest=$(find ${dest})"
+echo      "${dest}"
 #eval      "sudo ${copy} /etc $(find ${dest})"
 ##################################################
 declare   "dest=${SKEL} ${opts} ${hide}"

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #########################################
-source    "hexa.sh"
+source    "hexa.sh"  "share"
 #########################################
 echo      "[color]"
 echo      "foreground  =${hexa[primary]}"
-echo      "background  =${hexa[black]}"
-echo      "warning     =${hexa[yellow]}"
-echo      "alert       =${hexa[red]}"
+echo      "background  =${hexa[border]}"
+echo      "warning     =${hexa[warning]}"
+echo      "alert       =${hexa[alert]}"
 #########################################

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 ####################################
-source    "colo.sh"
+source    "colo.sh"  "${1}"
 ####################################
-declare   "hexa=$(typeset -p color)"
+declare   "hexa=$(typeset -p ${1})"
 declare   "hexa=${hexa//=\"/=\"#}"
-eval      "${hexa//color/hexa}"
+eval      "${hexa//${1}/hexa}"
 ####################################

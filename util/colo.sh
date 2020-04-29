@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#########################################
+#################################################
 declare   "-A"  "color"
-#########################################
+#################################################
 declare   "color[black]=2e3440"
 declare   "color[darkred]=bf616a"
 declare   "color[darkgreen]=a3be8c"
@@ -18,6 +18,13 @@ declare   "color[blue]=81a1c1"
 declare   "color[magenta]=b48ead"
 declare   "color[cyan]=8fbcbb"
 declare   "color[white]=eceff4"
-declare   "color[background]=3b4252"
-declare   "color[primary]=${color[cyan]}"
-#########################################
+#################################################
+declare   "-A"  "share"
+#################################################
+declare   "share[border]=${color[black]}"
+declare   "share[background]=3b4252"
+declare   "share[foreground]=${color[lightgrey]}"
+declare   "share[primary]=${color[cyan]}"
+declare   "share[warning]=${color[yellow]}"
+declare   "share[alert]=${color[red]}"
+#################################################

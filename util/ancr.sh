@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 ################################################
-source    "hexa.sh"
+source    "hexa.sh"  "share"
 ################################################
 declare   "hb=${hexa[background]}"
 declare   "hp=${hexa[primary]}"
-declare   "hf=${hexa[lightgrey]}"
-declare   "hr=${hexa[black]}"
+declare   "hf=${hexa[foreground]}"
+declare   "hr=${hexa[border]}"
 ################################################
 declare   "window=${hb},${hr},${hp}"
 declare   "normal=${hb},${hf},${hb},${hp},${hb}"

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ######################################################
-source    "hexa.sh"
+source    "hexa.sh"  "color"
 ######################################################
 declare   "key=palette"
 declare   "hash=2b7c4080-0ddd-46c5-8f23-563fd3ba789d"
