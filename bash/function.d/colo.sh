@@ -5,6 +5,7 @@ function  co()                                        {
   declare   "space=$(seq -s' ' ${1}|tr -d [:digit:])"
 #######################################################
   source    "back.sh"
+  source    "fore.sh"
 #######################################################
   echo
   for l in {0..7}
