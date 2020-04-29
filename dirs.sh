@@ -10,4 +10,5 @@ export    "PATH=$(getconf PATH):${path// /:}"
 #############################################
 source    "arrf.sh"  "${shel}"
 source    "dircolors.sh"
+source    "terminal.sh"
 #############################################
