@@ -12,3 +12,8 @@ source    "arrf.sh"  "${shel}"
 source    "dircolors.sh"
 source    "terminal.sh"
 #############################################
+eval      "clear"
+#############################################
+source    "environment.sh"
+source    "header.sh"
+#############################################
