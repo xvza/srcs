@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #############################################
-source    "fore.sh"
+source    "shel.sh"
 #############################################
 declare   "col=${shell[3]}"
 declare   "msg=${1:-${shell[2]}none}"

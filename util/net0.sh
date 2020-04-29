@@ -5,7 +5,7 @@ declare   "l0=directory label"
 declare   "l1=directory not found"
 ###############################################
 source    "arrd.sh"  "${dirs}/../.."
-source    "fore.sh"
+source    "shel.sh"
 ###############################################
 [[ -z ${1?$l0} ]]                             \
 && exit
