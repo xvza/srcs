@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
-#####################################
+######################################
 declare   "-a"  "back"
-#####################################
-for i in {0..15}
+declare   "-A"  "color"
+declare   "format=setterm -background"
+
+source    "colo.sh"
+######################################
+for color in ${!color[@]}
 do
-  declare "back[$i]=$(tput setab $i)"
+  declare "back+=($(${format} ${color}))"
 done
-#####################################
+######################################
