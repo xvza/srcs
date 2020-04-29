@@ -28,3 +28,5 @@ declare   "share[primary]=${color[cyan]}"
 declare   "share[warning]=${color[yellow]}"
 declare   "share[alert]=${color[red]}"
 #################################################
+
+echo $(eval echo  "${share[primary]}")

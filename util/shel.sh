@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-##########################################
+######################################################
 declare   "-A"  "shell"
-##########################################
-declare   "shell[bold]=$(tput bold)"
-declare   "shell[init]=$(tput sgr0)"
-declare   "shell[0]=$(tput setaf 2)"
-declare   "shell[1]=$(tput setaf 9)"
-declare   "shell[2]=$(tput setaf 5)"
-declare   "shell[3]=$(tput setaf 4)"
-declare   "shell[primary]=$(tput setaf 2)"
-##########################################
+######################################################
+declare   "shell[bold]=$(setterm -bold on)"
+declare   "shell[init]=$(setterm -default)"
+declare   "shell[0]=$(setterm -foreground green)"
+declare   "shell[1]=$(setterm -foreground red)"
+declare   "shell[2]=$(setterm -foreground magenta)"
+declare   "shell[3]=$(setterm -foreground blue)"
+declare   "shell[primary]=$(setterm -foreground cyan)"
+######################################################
