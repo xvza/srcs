@@ -19,3 +19,14 @@ declare   "share[primary]=${color[cyan]}"
 declare   "share[warning]=${color[yellow]}"
 declare   "share[alert]=${color[red]}"
 #############################################
+declare   "-a"  "order"
+#############################################
+declare   "order+=('${color[black]}')"
+declare   "order+=('${color[red]}')"
+declare   "order+=('${color[green]}')"
+declare   "order+=('${color[yellow]}')"
+declare   "order+=('${color[blue]}')"
+declare   "order+=('${color[magenta]}')"
+declare   "order+=('${color[cyan]}')"
+declare   "order+=('${color[white]}')"
+#############################################
