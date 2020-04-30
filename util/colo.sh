@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #############################################
-declare   "primary=cyan"
 declare   "-A"  "color"
 declare   "-A"  "share"
 declare   "-a"  "order"
@@ -17,7 +16,7 @@ declare   "share[background]=3b4252"
 #############################################
 declare   "share[border]=${color[black]}"
 declare   "share[foreground]=${color[white]}"
-declare   "share[primary]=${color[$primary]}"
+declare   "share[primary]=${color[$COLOR]}"
 declare   "share[warning]=${color[yellow]}"
 declare   "share[alert]=${color[red]}"
 #############################################

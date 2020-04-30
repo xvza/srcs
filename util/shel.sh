@@ -8,5 +8,5 @@ declare   "shell[0]=$(setterm -foreground green)"
 declare   "shell[1]=$(setterm -foreground red)"
 declare   "shell[2]=$(setterm -foreground magenta)"
 declare   "shell[3]=$(setterm -foreground blue)"
-declare   "shell[primary]=$(setterm -foreground ${primary})"
+declare   "shell[primary]=$(setterm -foreground ${COLOR})"
 ############################################################
