@@ -4,7 +4,7 @@ declare   "srcs=$(dirname ${BASH_SOURCE[0]})"
 declare   "http=${srcs}/.."
 declare   "shel=${srcs}/bash"
 #############################################
-source    "${srcs}/util/arrd.sh"  "${srcs}"
+source    "${srcs}/util.d/arrd.sh"  "${srcs}"
 declare   "path=$(echo ${dire[@]})"
 export    "PATH=$(getconf PATH):${path// /:}"
 #############################################

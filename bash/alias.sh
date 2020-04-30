@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 ################################################
-alias   "le=cd /etc/"
-alias   "lu=cd /usr/"
-alias   "lv=cd /var/"
+alias   "le=cd /etc"
+alias   "lu=cd /usr"
+alias   "lv=cd /var"
 ################################################
-alias   "lx=le;cd ./xdg/"
-alias   "lk=le;cd ./skel/"
-alias   "lh=lv;cd ./http/"
+alias   "lx=le;cd ./xdg"
+alias   "lk=le;cd ./skel"
+alias   "lh=lv;cd ./http"
 ################################################
-alias   "lea=lx;cd ./autostart/"
-alias   "leo=lx;cd ./openbox/"
-alias   "lua=lu;cd ./share/"
-alias   "lui=lua;cd ./icons/"
-alias   "lut=lua;cd ./themes/"
+alias   "lea=lx;cd ./autostart"
+alias   "leo=lx;cd ./openbox"
+alias   "lua=lu;cd ./share"
+alias   "lui=lua;cd ./icons"
+alias   "lut=lua;cd ./themes"
 ################################################
 alias   "rd=rt devs"
 alias   "re=rt etcs"
@@ -23,12 +23,12 @@ alias   "rs=rt srcs"
 alias   "ru=rt usrs"
 ################################################
 alias   "rk=re;cd ./skel"
-alias   "rx=re;cd ./xdg/"
+alias   "rx=re;cd ./xdg"
 ################################################
-alias   "rea=rx;cd ./autostart/"
-alias   "reo=rx;cd ./openbox/"
-alias   "rsa=rs;cd ./axdg/"
-alias   "rsb=rs;cd ./bash/"
+alias   "rea=rx;cd ./autostart"
+alias   "reo=rx;cd ./openbox"
+alias   "rsa=rs;cd ./axdg"
+alias   "rsb=rs;cd ./bash"
 ################################################
 alias   "chmod=chmod -v"
 alias   "chown=chown -v"
