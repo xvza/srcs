@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-######################################
+########################################
 declare   "-a"  "back"
-declare   "-A"  "color"
-declare   "format=setterm -background"
-
+declare   "format=setterm -background "
+########################################
 source    "colo.sh"
-######################################
-for color in ${!color[@]}
+########################################
+for color in ${!order[@]}
 do
-  declare "back+=($(${format} ${color}))"
+  declare "back+=($(${format}${color}))"
 done
-######################################
+########################################

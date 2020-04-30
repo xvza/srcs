@@ -8,14 +8,14 @@ function  co()                                        {
   source    "back.sh"
 #######################################################
   echo
-  for l in {0..7}
+  for l in ${!order[@]}
   do
 #######################################################
-    printf    " │${shell[bold]}"
-    for c in {0..7}
+    printf    " │"
+    for c in ${!order[@]}
     do
       printf  "${back[$l]}${space}${l}${space}"
-      printf  "${back[$c]}${space}${shell[bold]}${c}${space}"
+      printf  "${back[$c]}${space}${c}${space}"
     done
     echo      "${shell[init]}"
 #######################################################
