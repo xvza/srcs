@@ -6,7 +6,7 @@ export    "EDITOR=nano"
 #############################################
 export    "WIDTH=1920"
 export    "HEIGHT=1080"
-export    "COLOR=cyan"
+export    "COLOR=white"
 export    "SKEL=/etc/skel"
 export    "SHRD=/var/http/shrd"
 #############################################

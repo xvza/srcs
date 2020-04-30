@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #################################################
 source    "moun.sh"  "list"
-declare   "dire=${dire[list]}/syst/"
 #################################################
+declare   "syst=${dire[list]}/syst/"
 declare   "file=${syst}ena"
 #################################################
 eval      "dos2unix ${file}"
