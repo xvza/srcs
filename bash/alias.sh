@@ -45,6 +45,7 @@ alias   "rm=rm -rv"
 alias   "newsbeuter=rl;newsbeuter -u ./news/add"
 ################################################
 alias   "cava=cava.sh"
+alias   "xrdb=xrdb.sh"
 alias   "polybar=polybar.sh"
 ################################################
 alias   "ft=grep -nr"
