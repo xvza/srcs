@@ -2,7 +2,7 @@
 ############################################################
 function  get()                                            {
 ############################################################
-  source    "pmer.sh"
+  source    "prog.sh"
   source    "${prog}.sh"
   declare   "-g"  "prog=${prog}"
   declare   "-g"  "${FUNCNAME[1]}=${!FUNCNAME[1]}"

@@ -2,7 +2,7 @@
 #################################
 declare   "opts=upd"
 #################################
-source    "pmer.sh"
+source    "prog.sh"
 source    "vali.sh"  "${opts}"
 #################################
 eval      "sudo ${prog} ${!opts}"

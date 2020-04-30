@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #############################################
 declare   "dire=$(dirname ${BASH_SOURCE[0]})"
-declare   "prog=$(dirname ${dire})/prog"
+declare   "prog=$(dirname ${dire})/program.d"
 declare   "file=$(ls ${prog})"
 declare   "cmds=$(echo ${file//.sh/})"
 #############################################
