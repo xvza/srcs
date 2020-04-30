@@ -3,18 +3,13 @@
 source    "moun.sh"  "list"
 #################################################
 declare   "syst=${dire[list]}/syst/"
-declare   "file=${syst}ena"
 #################################################
-eval      "dos2unix ${file}"
-declare   "list=$(echo $(cat ${file}))"
+declare   "list=$(echo $(cat ${syst}ena))"
 #################################################
 eval      "sudo systemctl enable ${list}"
 echo      "systemctl: enable ${list}"
 #################################################
-declare   "file=${syst}mas"
-#################################################
-eval      "dos2unix ${file}"
-declare   "list=$(echo $(cat ${file})"
+declare   "list=$(echo $(cat ${syst}mas)"
 #################################################
 eval      "sudo systemctl mask ${list}"
 echo      "systemctl: mask ${list}"
