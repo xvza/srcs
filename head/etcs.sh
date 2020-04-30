@@ -2,23 +2,20 @@
 #################################################
 declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
 declare   "opts=-mindepth 1 -maxdepth 1"
-declare   "hide=-name '.*'"
 declare   "dele=$(command -v dele.sh)"
 declare   "copy=$(command -v copy.sh)"
-declare   "file=profile.d/environment.sh"
 #################################################
 source    "moun.sh"  "${name}"
-source    "${dire[$name]}/${file}"
-##################################################
-#eval      "sudo ${dele} ${HOME}"
-#eval      "sudo ${dele} ${SKEL}"
-##################################################
-declare   "dest=${dire[$name]} ${opts} ! ${hide}"
-declare   "dest=$(find ${dest})"
-echo      "${dest}"
-#eval      "sudo ${copy} /etc $(find ${dest})"
-##################################################
-declare   "dest=${SKEL} ${opts} ${hide}"
-#eval      "sudo ${copy} ${HOME} $(find ${dest})"
-##################################################
-# expulse hidden file from find
+source    "environment.sh"
+#################################################
+eval      "sudo ${dele} ${HOME}"
+eval      "sudo ${dele} ${SKEL}"
+#################################################
+declare   "dest=${dire[$name]} ${opts}"
+declare   "dest=$(find ${dest} -not -name '.*')"
+eval      "sudo ${copy} /etc ${dest}"
+#################################################
+declare   "dest=${SKEL} ${opts}"
+declare   "dest=$(find ${dest} -name '.*')"
+eval      "sudo ${copy} ${HOME} ${dest}"
+#################################################
