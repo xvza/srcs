@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 ###########################################################
-declare   "bios=/boot/grub/grub.cfg"
-declare   "efi=/boot/efi/EFI/fedora/grub.cfg"
+declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
+declare   "id=$(${name} getactivewindow)"
+eval      "${name} window${1} ${id} ${@:2}"
 ###########################################################
-eval      "sudo grub-mkconfig -o ${bios}"
-eval      "sudo grub2-mkconfig -o ${efi}"
+[[ ${1} == "move" ]] && eval "xdotool.sh size 50% 92%"
 ###########################################################
