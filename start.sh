@@ -6,12 +6,13 @@ declare   "shel=${srcs}/shell.d"
 declare   "file=$(find ${shel} -type f)"
 ###########################################################
 source    "${srcs}/source.d/dire.sh"  "${srcs}"
-export    "PATH=$(getconf PATH):${$(echo ${dire[@]})// /:}"
+declare   "path=$(echo ${dire[@]})"
+export    "PATH=$(getconf PATH):${path// /:}"
 ###########################################################
+eval      "source environment.sh"
 eval      "source dircolors.sh"
 eval      "source terminal.sh"
 eval      "source palette.sh"
-eval      "command clear"
-eval      "source environment.sh"
+eval      "clear"
 eval      "source header.sh"
 ###########################################################
