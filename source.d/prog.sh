@@ -3,15 +3,12 @@
 declare   "dire=$(dirname ${BASH_SOURCE[0]})"
 declare   "prog=$(dirname ${dire})/program.d"
 declare   "file=$(ls ${prog})"
-declare   "cmds=$(echo ${file//.sh/})"
 #############################################
-read      "-a"  "item" <<< ${cmds}
-#############################################
-for i in ${!item[@]}
+for i in ${file[@]//.sh/}
 do
 #############################################
-  [[ "$(command -v ${item[$i]})" ]]         \
-  && export "prog=${item[$i]}"              \
+  [[ "$(command -v ${i})" ]]                \
+  && export "prog=${i}"                     \
   && break
 #############################################
 done
