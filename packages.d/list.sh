@@ -13,5 +13,5 @@ source    "core.sh"  "${!1}"     "operation   :"  false
 source    "core.sh"  "${list}"   "list        :"
 source    "foot.sh"
 #######################################################
-eval      "sudo ${prog} ${!1} $(echo $(cat ${list}))"
+eval      "sudo ${prog} ${!1} $(cat ${list}|xargs)"
 #######################################################

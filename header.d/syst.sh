@@ -1,21 +1,17 @@
 #!/usr/bin/env bash
-#################################################
+##########################################
+function  syst()                         {
+##########################################
+  [[ -n ${2} ]]                          \
+  && local  "list=$(cat ${2}/${1?}|xargs)"
+  eval      "sudo systemctl ${1} ${list}"
+  echo      "systemctl: ${1} ${list}"
+##########################################
+                                         }
+##########################################
 source    "moun.sh"  "list"
-#################################################
-declare   "syst=${dire[list]}/syst/"
-#################################################
-declare   "list=$(echo $(cat ${syst}ena))"
-#################################################
-eval      "sudo systemctl enable ${list}"
-echo      "systemctl: enable ${list}"
-#################################################
-declare   "list=$(echo $(cat ${syst}mas)"
-#################################################
-eval      "sudo systemctl mask ${list}"
-echo      "systemctl: mask ${list}"
-#################################################
-eval      "sudo systemctl daemon-reload"
-echo      "systemctl: daemon-reload"
-#################################################
+eval      "syst enable ${dire[list]}/syst"
+eval      "syst mask ${dire[list]}/syst"
+eval      "syst daemon-reload"
 eval      "sudo updatedb -v"
-#################################################
+##########################################
