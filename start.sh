@@ -1,21 +1,17 @@
 #!/usr/bin/env bash
-#############################################
+###########################################################
 declare   "srcs=$(dirname ${BASH_SOURCE[0]})"
 declare   "http=${srcs}/.."
 declare   "shel=${srcs}/shell.d"
-declare   "file=${srcs}/source.d/arrd.sh"
-#############################################
-source    "${file}"  "${srcs}"
-declare   "path=$(echo ${dire[@]})"
-export    "PATH=$(getconf PATH):${path// /:}"
-#############################################
-source    "arrf.sh"  "${shel}"
-source    "dircolors.sh"
-source    "terminal.sh"
-source    "palette.sh"
-#############################################
-eval      "clear"
-#############################################
-source    "environment.sh"
-source    "header.sh"
-#############################################
+declare   "file=$(find ${shel} -type f)"
+###########################################################
+source    "${srcs}/source.d/dire.sh"  "${srcs}"
+export    "PATH=$(getconf PATH):${$(echo ${dire[@]})// /:}"
+###########################################################
+eval      "source dircolors.sh"
+eval      "source terminal.sh"
+eval      "source palette.sh"
+eval      "command clear"
+eval      "source environment.sh"
+eval      "source header.sh"
+###########################################################

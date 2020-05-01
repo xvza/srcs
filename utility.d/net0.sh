@@ -4,7 +4,7 @@ declare   "dirs=$(dirname ${BASH_SOURCE[0]})"
 declare   "l0=directory label"
 declare   "l1=directory not found"
 ###############################################
-source    "arrd.sh"  "${dirs}/../.."
+source    "dire.sh"  "${dirs}/../.."
 source    "shel.sh"
 ###############################################
 [[ -z ${1?$l0} ]]                             \
