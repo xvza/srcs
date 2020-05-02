@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 ###########################################################
-set -u
-###########################################################
 export    "SXHKD_SHELL=${SHELL}"
 export    "TMPDIR=/tmp"
 export    "EDITOR=nano"

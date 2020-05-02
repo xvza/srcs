@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 ###########################################################
+set -u
+###########################################################
 declare   "srcs=$(dirname ${BASH_SOURCE[0]})"
 declare   "http=${srcs}/.."
 declare   "shel=${srcs}/shell.d"
