@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+###########################################################
+set -u
 ########################################################
 declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
 declare   "copy=$(command -v copy.sh)"

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 ###########################################################
-eval      "gtk-launch $(xdg-mime query default ${1?})"
+eval      "gtk-launch $(xdg-mime query default ${1})"
 ###########################################################
