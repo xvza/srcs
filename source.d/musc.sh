@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 ####################################################
 declare   "bin=ogg123"
-declare   "s0=music directory"
 declare   "id=$(pgrep ${bin})"
 declare   "state=$(ps -q${id} -ostate --no-headers)"
 ####################################################
@@ -14,6 +13,6 @@ declare   "state=$(ps -q${id} -ostate --no-headers)"
 [[ ${1} -eq "0"  ]]                                \
 && eval   "killall -TERM ${bin}"
 ####################################################
-[[ -e ${SKEL}/${1?$s0} ]]                          \
+[[ -e ${SKEL}/${1} ]]                          \
 && eval   "${bin} -z ${SKEL}/${1}"
 ####################################################

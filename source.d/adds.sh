@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ###########################################################
 declare   "cmd=$(${BASH_ALIASES[mkdir]} ${@})"
-declare   "str=mkdir: '${1?}' already exist"
+declare   "str=mkdir: '${1}' already exist"
 ###########################################################
 [[ -z ${cmd} ]] && echo "${str}"
 [[ -n ${cmd} ]] && echo "${cmd}"

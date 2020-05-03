@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 ###########################################################
+set -u
+###########################################################
 declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
 declare   "file=find ${SHRD}/${name} -type f"
 declare   "color=${SHRD}/${name}/color.ini"

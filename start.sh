@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 ###########################################################
+set -u
+###########################################################
 declare   "srcs=$(dirname ${BASH_SOURCE[0]})"
 declare   "http=${srcs}/.."
 declare   "shel=${srcs}/shell.d"
@@ -15,4 +17,6 @@ eval      "source terminal.sh"
 eval      "source palette.sh"
 eval      "clear"
 eval      "source header.sh"
+###########################################################
+set +u
 ###########################################################
