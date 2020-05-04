@@ -18,3 +18,5 @@ eval      "delete ${HOME}/.local/share/epiphany ! -name *.gvdb"
 eval      "delete ${HOME}/.local/share -name *.xbel"
 eval      "delete ${HOME}/.cache"
 ###########################################################
+source    "background.sh"
+###########################################################
