@@ -14,5 +14,4 @@ source    "moun.sh"  "list"
 eval      "syst enable ${dire[list]}/syst"
 eval      "syst mask ${dire[list]}/syst"
 eval      "syst daemon-reload"
-eval      "sudo updatedb -v"
 ###########################################################
