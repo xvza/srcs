@@ -7,12 +7,7 @@ alias   "lv=cd /var"
 alias   "lx=le;cd ./xdg"
 alias   "lk=le;cd ./skel"
 alias   "lh=lv;cd ./http"
-################################################
-alias   "lea=lx;cd ./autostart"
-alias   "leo=lx;cd ./openbox"
-alias   "lua=lu;cd ./share"
-alias   "lui=lua;cd ./icons"
-alias   "lut=lua;cd ./themes"
+alias   "lr=lu;cd ./share"
 ################################################
 alias   "rd=rt devs"
 alias   "re=rt etcs"
@@ -24,11 +19,7 @@ alias   "ru=rt usrs"
 ################################################
 alias   "rk=re;cd ./skel"
 alias   "rx=re;cd ./xdg"
-################################################
-alias   "rea=rx;cd ./autostart"
-alias   "reo=rx;cd ./openbox"
-alias   "rsa=rs;cd ./axdg"
-alias   "rsb=rs;cd ./bash"
+alias   "ro=rx;cd ./autostart"
 ################################################
 alias   "chmod=chmod -v"
 alias   "chown=chown -v"
