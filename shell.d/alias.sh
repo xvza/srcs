@@ -44,8 +44,10 @@ alias   "top=htop"
 alias   "newsbeuter=rl;newsbeuter -u ./news/add"
 ################################################
 alias   "cava=cava.sh"
-alias   "xrdb=xrdb.sh"
+alias   "paclog=paclog --caller=ALPM"
 alias   "polybar=polybar.sh"
+################################################
+alias   "xrdb=xrdb.sh"
 ################################################
 alias   "en=ta :en"
 alias   "fr=ta :fr"

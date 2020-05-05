@@ -5,7 +5,7 @@ declare   "add=-Sq --needed --noconfirm"
 declare   "upd=-Sqyu --noconfirm"
 ########################################
 declare   "li=-Q"
-declare   "la=-Sl"
+declare   "la=-Ss"
 declare   "le=-Qmq"
 declare   "lo=-Qdtq"
 ########################################
