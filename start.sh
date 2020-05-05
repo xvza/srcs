@@ -11,12 +11,14 @@ source    "${srcs}/source.d/dire.sh"  "${srcs}"
 declare   "path=$(echo ${dire[@]})"
 export    "PATH=$(getconf PATH):${path// /:}"
 ###########################################################
-eval      "source environment.sh"
-eval      "source dircolors.sh"
-eval      "source terminal.sh"
-eval      "source palette.sh"
+source    "environment.sh"
+source    "dircolors.sh"
+source    "terminal.sh"
+source    "palette.sh"
+###########################################################
 eval      "clear"
-eval      "source header.sh"
+###########################################################
+source    "header.sh"
 ###########################################################
 set +u
 ###########################################################
