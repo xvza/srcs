@@ -2,7 +2,7 @@
 ###########################################################
 set       "+u"
 ###########################################################
-declare   "session=${DESKTOP_SESSION}${XDG_SESSION_TYPE}"
+declare   "session=${DESKTOP_SESSION}${XDG_SESSION_TYPE} ${XDG_VTNR}"
 declare   "kernel=$(uname -r|cut -d- -f1)"
 declare   "shell=$(basename ${SHELL}) ${BASH_VERSION%(*}"
 ###########################################################
