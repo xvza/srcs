@@ -11,5 +11,3 @@ declare   "file=file://${img}"
 eval      "display -window root ${file}"
 eval      "gsettings set ${path} picture-uri ${file}"
 ###########################################################
-source    "net2.sh"  "${img}"  "${url}"  "${img}"
-###########################################################

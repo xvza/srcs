@@ -2,9 +2,9 @@
 ###########################################################
 set -u
 ###########################################################
-declare   "name=$(basename ${BASH_SOURCE[0]%.*})"
+declare   "arg=${WIDTH}x${HEIGHT}?nature,animals"
+declare   "url=https://source.unsplash.com/${arg}"
+declare   "img=${SKEL}/Picture/_.jpg"
 ###########################################################
-eval      "${name} -s ${WIDTH}x${HEIGHT}"
+source    "net2.sh"  "${img}"  "${url}"  "${img}"
 ###########################################################
-tilix
-exec mate-session
