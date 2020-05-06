@@ -2,11 +2,8 @@
 ###########################################################
 set -u
 ###########################################################
-declare   "arg=${WIDTH}x${HEIGHT}?nature,animals"
-declare   "url=https://source.unsplash.com/${arg}"
 declare   "path=org.gnome.desktop.background"
-declare   "img=/etc/skel/Picture/_.jpg"
-declare   "file=file://${img}"
+declare   "file=file://${SKEL}/Picture/_.jpg"
 ###########################################################
 eval      "display -window root ${file}"
 eval      "gsettings set ${path} picture-uri ${file}"
