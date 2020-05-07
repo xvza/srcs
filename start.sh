@@ -10,7 +10,7 @@ declare   "file=$(find ${shel} -type f)"
 source    "${srcs}/source.d/dire.sh"  "${srcs}"
 declare   "path=$(echo ${dire[@]})"
 declare   "PATH=$(getconf PATH):${path// /:}"
-############################################################
+###########################################################
 source    "environment.sh"
 source    "dircolors.sh"
 source    "terminal.sh"
