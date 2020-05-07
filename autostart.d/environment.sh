@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 ###########################################################
+export    "PATH=${PATH}"
 export    "SXHKD_SHELL=${SHELL}"
 export    "TMPDIR=/tmp"
 export    "EDITOR=nano"
