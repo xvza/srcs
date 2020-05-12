@@ -12,7 +12,6 @@ declare   "path=$(echo ${dire[@]})"
 declare   "PATH=$(getconf PATH):${path// /:}"
 ###########################################################
 source    "environment.sh"
-source    "dircolors.sh"
 source    "terminal.sh"
 source    "palette.sh"
 ###########################################################
