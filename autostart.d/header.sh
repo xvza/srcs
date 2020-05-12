@@ -8,10 +8,10 @@ declare   "shell=$(basename ${SHELL}) ${BASH_VERSION%(*}"
 ###########################################################
 eval      "${LINE}"
 ###########################################################
-echo      "term     │  ${TERM}"
-echo      "kernel   │  ${kernel}"
-echo      "session  │  ${session}"
-echo      "shell    │  ${shell}"
+echo      " term     │  ${TERM}"
+echo      " kernel   │  ${kernel}"
+echo      " session  │  ${session}"
+echo      " shell    │  ${shell}"
 ###########################################################
 eval      "${LINE}"
 ###########################################################
