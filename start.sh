@@ -2,22 +2,23 @@
 ###########################################################
 set -u
 ###########################################################
-declare   "srcs=$(dirname ${BASH_SOURCE[0]})"
-declare   "http=${srcs}/.."
-declare   "shel=${srcs}/shell.d"
-declare   "file=$(find ${shel} -type f)"
+declare     "srcs=$(dirname ${BASH_SOURCE[0]})"
+declare     "http=${srcs}/.."
+declare     "shel=${srcs}/shell.d"
+declare     "file=$(find ${shel} -type f)"
 ###########################################################
-source    "${srcs}/source.d/dire.sh"  "${srcs}"
-declare   "path=$(echo ${dire[@]})"
-declare   "PATH=$(getconf PATH):${path// /:}"
+source      "${srcs}/source.d/dire.sh"  "${srcs}"
+declare     "path=$(echo ${dire[@]})"
+declare     "PATH=$(getconf PATH):${path// /:}"
 ###########################################################
-source    "environment.sh"
-source    "terminal.sh"
-source    "palette.sh"
+source      "environment.sh"
+source      "terminal.sh"
+source      "palette.sh"
 ###########################################################
-eval      "clear"
+eval        "clear"
 ###########################################################
-source    "header.sh"
+source      "header.sh"
+source      <(cat ${file[@]})
 ###########################################################
 set +u
 ###########################################################
