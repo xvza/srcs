@@ -10,7 +10,7 @@ export      "WIDTH=1920"
 export      "HEIGHT=1080"
 export      "COLOR=cyan"
 export      "SKEL=/etc/skel"
-export	    "SHRD=${mnt}/shrd"
+export      "SHRD=${mnt}/shrd"
 ###########################################################
 export      "LINE=seq -s─ $(($(tput cols) -1))|tr -d [:digit:]"
 ###########################################################
