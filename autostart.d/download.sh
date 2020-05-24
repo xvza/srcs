@@ -6,5 +6,5 @@ declare   "arg=${WIDTH}x${HEIGHT}?nature,animals"
 declare   "url=https://source.unsplash.com/${arg}"
 declare   "img=${SKEL}/Picture/background.jpg"
 ###########################################################
-eval      "wget -P$(dirname ${img}) -nc ${url} -O${img}"
+eval      "wget -P$(dirname ${img}) ${url} -O${img}"
 ###########################################################
