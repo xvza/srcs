@@ -2,9 +2,8 @@
 ###########################################################
 set -u
 ###########################################################
-eval      "upda.sh"  "upd"
-eval      "list.sh"  "add"  "prog"
-eval      "list.sh"  "add"
-eval	  "list.sh"  "gtk"
 eval      "list.sh"  "del"  "prog"
+eval      "upda.sh"  "upd"
+eval      "list.sh"  "add"
+eval      "list.sh"  "add"  "prog"
 ###########################################################
