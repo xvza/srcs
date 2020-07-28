@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 ###########################################################
-[[ $_ != $0 ]] && echo "Script is being sourced" || echo "Script is a subshell"
+[[ $_ != $0 ]] && echo "Script is being sourced"
+[[ $_ == $0 ]] && echo "Script is a subshell"
+###########################################################
 sleep .7
 ###########################################################
 set -u
