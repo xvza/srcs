@@ -15,7 +15,7 @@ export      "SHRD=${mnt}/shrd"
 export      "LINE=seq -s─ $(($(tput cols) -1))|tr -d [:digit:]"
 ###########################################################
 source      "/usr/share/bash-completion/bash_completion"
-source      "/etc/bash_completion"
+source      "/etc/profile.d/bash_completion.sh"
 ###########################################################
 set -u
 ###########################################################
