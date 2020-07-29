@@ -2,11 +2,10 @@
 ###########################################################
 set -u
 ###########################################################
-declare   "src=dconf load /"
-declare   "path=/run/media/used/Remote/shrd/dconf"
+source    "moun.sh"  "shrd"
 ###########################################################
-${src} < ${path}/config.ini
-${src} < ${path}/desktop.ini
+dconf load / < ${dire[shrd]}/dconf/config.ini
+dconf load / < ${dire[shrd]}/dconf/desktop.ini
 ###########################################################
 set +u
 ###########################################################

@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 ###########################################################
-[[ $_ != $0 ]] && echo "Script is being sourced"
-[[ $_ == $0 ]] && echo "Script is a subshell"
+echo "a=$_"
+echo "b=$0"
+
+declare     "last=${_}"
+declare     "file=${0}"
+
+[[ $_ != ${file} ]] && echo "Script is being sourced"
+[[ $_ == ${file} ]] && echo "Script is a subshell"
 ###########################################################
 sleep .7
 ###########################################################
