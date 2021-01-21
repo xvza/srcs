@@ -4,4 +4,5 @@ flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
 ###########################################################
 flatpak install flathub com.github.micahflee.torbrowser-launcher
 flatpak install flathub re.sonny.Tangram
+flatpak install flathub de.haeckerfelix.Shortwave
 ###########################################################

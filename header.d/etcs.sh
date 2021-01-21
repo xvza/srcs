@@ -13,5 +13,5 @@ eval      "sudo ${dele} ${HOME}"
 eval      "sudo ${dele} ${SKEL}"
 ###########################################################
 eval      "sudo ${copy} /etc ${dire[$name]}"
-eval      "sudo ${copy} ${HOME} ${SKEL} 1"
+eval      "sudo ${copy} ${HOME} ${SKEL}"
 ###########################################################
