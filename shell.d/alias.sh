@@ -15,7 +15,6 @@ alias   "rh=rt trsh"
 alias   "rl=rt list"
 alias   "ra=rt shrd"
 alias   "rs=rt srcs"
-alias   "ru=rt usrs"
 ###########################################################
 alias   "rk=re;cd ./skel"
 alias   "rx=re;cd ./xdg"
